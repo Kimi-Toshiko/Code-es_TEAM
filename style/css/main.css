@@ -1,1 +1,82 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quintessential&family=Source+Serif+4:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --poppins-font: 'Poppins', sans-serif;
+  --quintessential-font: 'Quintessential', cursive;
+  --source-serif: 'Source Serif 4', sans-serif;
+
+  --main-color: #69a5c9;
+  --darker-main-color: #416a83;
+  --secondary-color: #fabfd1;
+  --white-color: #fff;
+  --black-color: #000;
+}
+
+html {
+  font-size: 16px;
+  font-family: var(--poppins-font);
+}
+
+header {
+  background-color: #69a5c9;
+  width: 96%;
+  height: 4rem;
+  padding-left: 2%;
+  padding-right: 2%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.logo {
+  align-self: center;
+  width: 25%;
+}
+
+.logo i {
+  font-size: 2rem;
+  color: white;
+}
+
+nav {
+  width: 50%;
+  align-self: center;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: var(--darker-main-color);
+  transition: .3s;
+}
+
+.profile {
+  width: 25%;
+  align-self: center;
+  text-align: right;
+}
+
+.profile i {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.profile i:hover {
+  color: var(--darker-main-color);
+  transition: .3s;
+}
