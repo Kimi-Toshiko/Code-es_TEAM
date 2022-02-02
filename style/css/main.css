@@ -1,0 +1,337 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quintessential&family=Source+Serif+4:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --poppins-font: 'Poppins', sans-serif;
+  --quintessential-font: 'Quintessential', cursive;
+  --source-serif: 'Source Serif 4', sans-serif;
+
+  --main-color: #69a5c9;
+  --darker-main-color: #416a83;
+  --secondary-color: #f786a8;
+  --white-color: #fff;
+  --black-color: #000;
+}
+
+html {
+  font-size: 16px;
+  font-family: var(--poppins-font);
+}
+
+h3 {
+  font-family: var(--source-serif);
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--main-color);
+}
+
+header {
+  background-color: #69a5c9;
+  width: 96%;
+  height: 4rem;
+  padding-left: 2%;
+  padding-right: 2%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  position: absolute;
+}
+
+.logo {
+  align-self: center;
+  width: 25%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.logo i {
+  font-size: 2rem;
+  color: white;
+}
+
+.logo h1 {
+  align-self: center;
+  font-size: 1.5rem;
+  color: #fff;
+  font-family: var(--quintessential-font);
+  margin-left: 2%;
+}
+
+nav {
+  width: 50%;
+  align-self: center;
+}
+
+nav .active {
+  color: #213a49;
+  border-bottom: 1px solid #213a49;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: var(--darker-main-color);
+  transition: .3s;
+}
+
+.profile {
+  width: 25%;
+  align-self: center;
+  text-align: right;
+}
+
+.profile i {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.profile i:hover {
+  color: var(--darker-main-color);
+  transition: .3s;
+}
+
+.main {
+  width: 98.9vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  background-image: url('../../assets/imgs/home-bg.jpg');
+  background-size: cover;
+}
+
+.main h2 {
+  width: 40%;
+  font-size: 4rem;
+  text-align: center;
+  align-self: center;
+  font-family: var(--source-serif);
+  line-height: 6rem;
+  margin-top: 4%;
+}
+
+.choose-us {
+  width: 94.9vw;
+  padding: 0 2vw 0 2vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.choose-us > .img {
+  width: 80%;
+  align-self: center;
+  margin-right: 1rem;
+}
+
+.choose-us > .img > img {
+  width: 100%;
+  height: auto;
+}
+
+.choose-us > .txt {
+  width: 80%;
+  height: 50%;
+  align-self: center;
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* .choose-us > .txt > h3 {
+  font-family: var(--source-serif);
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--main-color);
+} */
+
+
+.choose-us > .txt > .info > p {
+  margin: 1rem 0 1rem 0;
+  line-height: 2rem;
+}
+
+.choose-us > .txt > .btn > a {
+  font-family: var(--source-serif);
+  background-color: var(--secondary-color);
+  width: 100%;
+  height: 100%;
+  padding: 1.2rem;
+  border-radius: 1rem;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.choose-us > .txt > .btn > a:hover {
+  background-color: var(--main-color);
+  transition: .3s;
+}
+
+.popular-courses {
+  margin-top: 4rem;
+}
+
+.popular-courses > h3 {
+  text-align: center;
+}
+
+.courses {
+  margin: 3rem 3rem auto 3rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.course {
+  width: 30%;
+  margin-bottom: 20rem;
+}
+
+.course > .crs-img {
+  background-color: var(--main-color);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.html-img {
+  background-image: url(../../assets/imgs/study-html.jpg);
+}
+.css-img {
+  background-image: url(../../assets/imgs/study-css.png);
+}
+.js-img {
+  background-image: url(../../assets/imgs/study-js.png);
+}
+.jquery-img {
+  background-image: url(../../assets/imgs/study-jquery.png);
+}
+
+.price > span {
+  background-color: var(--secondary-color);
+  padding: 1.1rem;
+  border-radius: 100%;
+  color: #fff;
+  margin-left: 1rem;
+}
+
+.course > .txt > h4 {
+  margin-top: 1rem;
+  margin-bottom: 0.7rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.course > .txt > h4 > a {
+  color: #000;
+  text-decoration: none;
+}
+
+.course > .txt > h4 > a:hover {
+  text-decoration: underline;
+  color: var(--darker-main-color);
+}
+
+.course > .txt > p {
+  line-height: 1.3rem;
+}
+
+.course > .description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 1rem;
+  margin-top: 1rem;
+  border-top: 1px solid lightgray;
+}
+
+.course > .description i {
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+}
+
+.contact-us {
+  width: 98.9vw;
+  height: 100vh;
+  background-color: var(--darker-main-color);
+}
+
+.contact-us > h3 {
+  text-align: center;
+  color: #fff;
+  padding-top: 2.5rem;
+}
+
+.contact-us > form {
+  width: 70%;
+  margin: 4rem 15% auto 15%;
+}
+
+.contact-us > form > .inputs {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#name {
+  width: calc(49% - 1rem);
+  height: 4rem;
+  padding-left: 1rem;
+  background-color: #dce8f0;
+  border: 2px solid #213a49;
+}
+
+#email {
+  width: calc(49% - 1rem);
+  height: 4rem;
+  padding-left: 1rem;
+  background-color: #dce8f0;
+  border: 2px solid #213a49;
+}
+
+#email-dscr {
+  width: 100%;
+  margin-top: 1rem;
+  background-color: #dce8f0;
+  border: 2px solid #213a49;
+}
+
+#send-email {
+  width: 9rem;
+  height: 4rem;
+  margin: 2rem calc(50% - 4.5rem) auto calc(50% - 4.5rem);
+  background-color: var(--secondary-color);
+  border-radius: 1.2rem;
+  border: 2px solid #d84c76;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+#send-email:hover {
+  background-color: #fff;
+  color: var(--secondary-color);
+  transition: .25s;
+}
