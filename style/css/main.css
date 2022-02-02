@@ -63,6 +63,11 @@ nav {
   align-self: center;
 }
 
+nav .active {
+  color: #213a49;
+  border-bottom: 1px solid #213a49;
+}
+
 nav ul {
   display: flex;
   flex-direction: row;
