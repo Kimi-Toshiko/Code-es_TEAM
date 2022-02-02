@@ -17,6 +17,13 @@ html {
   font-family: var(--poppins-font);
 }
 
+h3 {
+  font-family: var(--source-serif);
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--main-color);
+}
+
 header {
   background-color: #69a5c9;
   width: 96%;
@@ -145,12 +152,12 @@ nav ul li a:hover {
   justify-content: space-between;
 }
 
-.choose-us > .txt > h3 {
+/* .choose-us > .txt > h3 {
   font-family: var(--source-serif);
   font-size: 3rem;
   font-weight: 800;
   color: var(--main-color);
-}
+} */
 
 
 .choose-us > .txt > .info > p {
