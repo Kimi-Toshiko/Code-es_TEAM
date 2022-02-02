@@ -27,16 +27,28 @@ header {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
+  position: absolute;
 }
 
 .logo {
   align-self: center;
   width: 25%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
 .logo i {
   font-size: 2rem;
   color: white;
+}
+
+.logo h1 {
+  align-self: center;
+  font-size: 1.5rem;
+  color: #fff;
+  font-family: var(--quintessential-font);
+  margin-left: 2%;
 }
 
 nav {
@@ -79,4 +91,25 @@ nav ul li a:hover {
 .profile i:hover {
   color: var(--darker-main-color);
   transition: .3s;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  background-image: url('../../assets/imgs/home-bg.jpg');
+  background-size: cover;
+}
+
+.main h2 {
+  width: 40%;
+  font-size: 4rem;
+  text-align: center;
+  align-self: center;
+  font-family: var(--source-serif);
+  line-height: 6rem;
+  margin-top: 4%;
 }
