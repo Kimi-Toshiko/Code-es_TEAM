@@ -194,10 +194,13 @@
             <h3>Contact Us</h3>
             
             <form action="">
-                <input type="text">
-                <input type="text">
-                <textarea name="email-dscr" id="email-dscr" cols="30" rows="10"></textarea>
-                <button>Send Now</button>
+                <div class="inputs">
+                    <input type="text" class="name" id="name" name="name" placeholder="Your name">
+                    <input type="text" class="email" id="email" name="email" placeholder="Your e-mail">
+                    <textarea name="email-dscr" id="email-dscr" cols="30" rows="15" placeholder="Text of your e-mail..."></textarea>
+                </div>
+
+                <button id="send-email">Send Now</button>
             </form>
         </section>
     </main>
