@@ -203,12 +203,12 @@ nav ul li a:hover {
   justify-content: space-between;
 }
 
-.course {
+.courses > .course {
   width: 30%;
   margin-bottom: 20rem;
 }
 
-.course > .crs-img {
+.courses > .course > .crs-img {
   background-color: var(--main-color);
   background-size: cover;
   width: 100%;
@@ -236,28 +236,28 @@ nav ul li a:hover {
   margin-left: 1rem;
 }
 
-.course > .txt > h4 {
+.courses > .course > .txt > h4 {
   margin-top: 1rem;
   margin-bottom: 0.7rem;
   font-size: 1.5rem;
   font-weight: 800;
 }
 
-.course > .txt > h4 > a {
+.courses > .course > .txt > h4 > a {
   color: #000;
   text-decoration: none;
 }
 
-.course > .txt > h4 > a:hover {
+.courses > .course > .txt > h4 > a:hover {
   text-decoration: underline;
   color: var(--darker-main-color);
 }
 
-.course > .txt > p {
+.courses > .course > .txt > p {
   line-height: 1.3rem;
 }
 
-.course > .description {
+.courses > .course > .description {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -266,7 +266,7 @@ nav ul li a:hover {
   border-top: 1px solid lightgray;
 }
 
-.course > .description i {
+.courses > .course > .description i {
   color: var(--secondary-color);
   font-size: 1.5rem;
 }
@@ -334,4 +334,62 @@ nav ul li a:hover {
   background-color: #fff;
   color: var(--secondary-color);
   transition: .25s;
+}
+
+.first-el {
+  padding-top: 10rem;
+}
+
+.our-courses {
+  width: 87.9rem;
+  height: 100vh;
+  padding: 0 4rem 0 4rem;
+  margin-bottom: 2rem;
+}
+
+.our-courses > .course {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.our-courses > .course.left-side {
+  flex-direction: row;
+}
+
+.our-courses > .course.right-side {
+  flex-direction: row-reverse;
+}
+
+.our-courses > .course > .img {
+  width: 20%;
+  height: auto;
+}
+
+.our-courses > .course > .img > img {
+  width: 100%;
+  height: auto;
+}
+
+.our-courses > .course > .txt {
+  width: 60%;
+}
+
+.our-courses > .course > .txt > h3 {
+  margin-bottom: 3rem;
+}
+
+.our-courses > .course > .txt > h3 > a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+.our-courses > .course > .txt > h3 > a:hover {
+  color: var(--darker-main-color);
+  transition: .3s;
+}
+
+.our-courses > .course > .txt > p {
+  line-height: 3rem;
+  margin-bottom: 2rem;
 }
