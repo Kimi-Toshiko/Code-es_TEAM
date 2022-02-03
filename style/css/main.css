@@ -393,3 +393,86 @@ nav ul li a:hover {
   line-height: 3rem;
   margin-bottom: 2rem;
 }
+
+.add-margins {
+  margin: auto 3rem auto 3rem;
+}
+
+.about-page.information {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.about-page .info {
+  width: 70%;
+}
+
+.about-page .side-info {
+  width: 20%;
+}
+
+.about-page .info > h4 {
+  margin-top: 2rem;
+  font-family: var(--source-serif);
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.about-page .info > p {
+  margin-bottom: 1.5rem;
+  line-height: 2rem;
+}
+
+.about-page .side-info > .link-become-member {
+  padding: 1rem;
+  background-color: var(--secondary-color);
+  border: 2px solid lightgray;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.about-page .side-info > .link-become-member:hover {
+  background-color: var(--main-color);
+  transition: .3s;
+}
+
+.about-page .side-info > p {
+  margin-top: 3rem;
+  display: inline;
+}
+
+.sign-in-btn {
+  line-height: 3rem;
+  color: black;
+}
+
+.social-media {
+  width: 100%;
+  margin-top: 3rem;
+  background-color: #000;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 8rem;
+  padding: 1rem;
+}
+
+.social-media a {
+  text-decoration: none;
+}
+
+.social-media i {
+  color: #fff;
+  font-size: 1.4rem;
+  margin: 1rem 2rem auto 1rem;
+  display: block;
+  text-decoration: none;
+}
+
+.social-media i:hover {
+  color: var(--secondary-color);
+  transition: .3s;
+}
